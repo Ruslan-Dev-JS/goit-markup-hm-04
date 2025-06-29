@@ -163,7 +163,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .features {
   padding: 120px 0;
-  width: 1440px;
+  max-width: 1440px;
 }
 
 .container {
@@ -248,6 +248,12 @@ h1, h2, h3, h4, h5, h6, p {
   margin: 0;
   list-style: none;
   overflow-x: hidden;
+}
+
+.portfolio-item:hover .img-text,
+.portfolio-item:focus-within .img-text {
+  background-color: #404bbf;
+  transform: translateY(0%);
 }
 
 .team-card {
