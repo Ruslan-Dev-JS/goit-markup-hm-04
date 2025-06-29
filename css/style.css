@@ -95,6 +95,7 @@ h1,h2,h3,h4,h5,h6,p{
 
 /* Логотип */
 .logo-class {
+  
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -145,6 +146,12 @@ h1,h2,h3,h4,h5,h6,p{
   padding: 188px 0;
   background-color: #2e2f42; /* якщо в макеті є фон */
   text-align: center;
+  background-image: 
+    linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
+    url('../images/7c8d46d47e83b6c8ee4603ea892aa8aaebb3c5fe.jpg');
+      background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 
@@ -220,10 +227,18 @@ h1,h2,h3,h4,h5,h6,p{
   padding: 0;
   margin: 0;
   list-style: none;
+  justify-content: space-between;
 }
 
 .feature-item {
   width: calc((100% - 72px) / 4);
+}
+
+.feature-image {
+  width: 264px;
+  height: 112px;
+  margin-bottom: 16px;
+  vertical-align: middle;
 }
 
 .feature-title {
@@ -241,42 +256,14 @@ h1,h2,h3,h4,h5,h6,p{
 }
 
 
+
 .team-section {
   background-color: #F4F4FD;
   padding: 120px 0;
 }
 
-
-/* Прихований заголовок */
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-/* Список */
-
-
-/* Заголовок в картці */
-.card-title {
-  margin-bottom: 8px;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1.2;
-  color: #2e2f42;
-}
-
-/* Параграф */
-
-
-.section-title {
+.team-title {
+  margin-bottom: 72px;
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
@@ -285,26 +272,18 @@ h1,h2,h3,h4,h5,h6,p{
   color: #2e2f42;
 }
 
-.team-section {
-  padding: 120px 0;
-}
-
-.team-title {
-  margin-bottom: 72px;
-  font-size: 2rem; /* або відповідний розмір */
-  text-align: center; /* якщо потрібно центрувати */
-}
-
 .team-list {
   display: flex;
   gap: 24px;
   padding: 0;
   margin: 0;
   list-style: none;
+  flex-wrap: wrap;
 }
 
 .team-card {
   width: calc((100% - 72px) / 4);
+  background-color: #fff;
   border-radius: 0 0 4px 4px;
   display: flex;
   flex-direction: column;
@@ -314,7 +293,49 @@ h1,h2,h3,h4,h5,h6,p{
 .card-info {
   padding: 32px 0;
   width: 100%;
+  text-align: center;
 }
+
+.card-title {
+  margin-bottom: 8px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #2e2f42;
+}
+
+.card-text {
+  margin-bottom: 12px;
+  font-size: 16px;
+  color: #434455;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.icon-wrapper {
+  background-color: #1D4ED8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.icon-wrapper:hover {
+  background-color: #2563eb;
+}
+
+.icon-wrapper img {
+  width: 24px;
+  height: 24px;
+}
+
 
 .team-list li:last-child {
   margin-right: 0;
@@ -363,14 +384,6 @@ h1,h2,h3,h4,h5,h6,p{
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
-}
-
-.card-title {
-  margin-bottom: 8px;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1.2;
-  color: #2e2f42;
 }
 
 .card-text {
