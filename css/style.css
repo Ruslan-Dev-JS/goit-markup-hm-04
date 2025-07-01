@@ -323,6 +323,11 @@ font-weight: 700;
   text-decoration: none;
 }
 
+.social-link-hover {
+  background-color: #404bbf;
+}
+
+
 .social-link:hover,
 .social-link:focus {
   background-color: #404bbf;
