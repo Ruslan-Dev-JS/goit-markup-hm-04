@@ -323,7 +323,8 @@ font-weight: 700;
     gap: 24px;
 }
 
-.social-link:hover {
+.social-link:hover,
+.social-link:focus{
   background-color: #404bbf;
 }
 
