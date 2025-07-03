@@ -50,8 +50,6 @@ h1, h2, h3, h4, h5, h6, p {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
-  display: inline-block;
-  margin-bottom: 16px;
 }
 
 .studio_logo {
@@ -125,6 +123,7 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 188px 0;
   background-color: #2e2f42;
   text-align: center;
+  margin: 0 auto;
   background-image:
     linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     url('../images/7c8d46d47e83b6c8ee4603ea892aa8aaebb3c5fe.jpg');
@@ -220,16 +219,6 @@ flex-basis: calc((100% - 72px) / 4);
   color: #333;
 }
 
-.team-list {
-  display: flex;
-  gap: 30px;
-  flex-wrap: wrap;
-  justify-content: center;
-  overflow-x: visible;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
 .container {
   max-width: 1440px;
   margin: 0 auto;
@@ -238,12 +227,12 @@ flex-basis: calc((100% - 72px) / 4);
 
 .team-section {
   background-color: #f9f9f9;
-  padding: 60px 0;
+  padding: 120px 0;
 }
 
 .team-list {
   display: flex;
-  gap: 30px;
+  gap: 24px;
   justify-content: center;
   flex-wrap: nowrap;
   overflow-x: auto;
@@ -260,7 +249,7 @@ flex-basis: calc((100% - 72px) / 4);
   text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
-  margin: 120px 0;
+  margin-bottom: 120px;
 }
 
 
@@ -300,7 +289,6 @@ font-weight: 700;
   justify-content: center;
   gap: 24px;
   list-style: none;
-  padding: 10px 0;
   margin: 0;
 }
 
@@ -427,7 +415,7 @@ font-weight: 700;
 }
 
 .card-text {
-  margin: 0;
+  margin-bottom: 10px;
   font-size: 14px;
   color: #666;
 }
