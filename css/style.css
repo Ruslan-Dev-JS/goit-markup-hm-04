@@ -217,17 +217,17 @@ color: #2E2F42;
 }
 
 .features-text {
-  font-family: Roboto;
-font-weight: 400;
-font-style: Regular;
-font-size: 16px;
-line-height: 24px;
-letter-spacing: 2%;
-color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
 }
 
+
 .team-section {
-  background-color: #f9f9f9;
+  background-color: #F4F4FD;
   padding: 120px 0;
 }
 
@@ -339,7 +339,7 @@ font-weight: 700;
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 48px 24px;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -432,6 +432,7 @@ line-height: 24px;
   font-size: 16px;
   line-height: 24px;
   color: #666;
+  margin-bottom: 8px;
 }
 
 .site-footer {
